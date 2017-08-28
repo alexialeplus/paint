@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Paint </title>
+	<meta charset="utf-8">
+	<meta name="content-language" content="english">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/forms.js"></script>
+	<script type="text/javascript" src="assets/js/buttons.js"></script>
+	<script type="text/javascript" src="assets/js/drawErase.js"></script> 
+	<script type="text/javascript" src="assets/js/dragndrop.js"></script> 
+</head>
+
+<body>
+	<header>
+		<h1> My Paint </h1>
+	</header>
+
+	<section>
+		<div id="menu">
+			<img class="tools" id="line" src="assets/img/ligne.png" alt="icone ligne">
+			<img class="tools" id="rect" src="assets/img/rectangle.png" alt="icone rectangle vide">
+			<img class="tools" id="fullrect" src="assets/img/fullrectangle.png" alt="icone rectangle plein">
+			<img class="tools" id="circle" src="assets/img/cercle.png" alt="icone cercle vide">
+			<img class="tools" id="fullcircle" src="assets/img/fullcercle.png" alt="icone cercle plein">
+			<img class="tools" id="pencil" src="assets/img/crayon.png" alt="icone crayon">
+			<img class="tools" id="eraser" src="assets/img/gomme.png" alt="icone gomme"><br>
+			<p> Line width: </p>
+			<img class="tools" id="smallsize" src="assets/img/smallsize.png" alt="icone trait fin">
+			<img class="tools" id="mediumsize" src="assets/img/mediumsize.png" alt="icone trait moyen">
+			<img class="tools" id="largesize" src="assets/img/largesize.png" alt="icone trait épais">
+			<p> Pick a color: </p>
+			<input type="color" id="color"><br>
+			<p id="clear_button" class="button"> Clear all </p>
+			<a id="save_button" class="button" download="untitled"> Save </a>
+			<input id="select_button" type="file" accept="image/*">
+			<p id="selected_file" class="button"> Upload a file </p>
+		</div>
+		<canvas id="canvas" width="800" height="600">
+		</canvas>
+	</section>
+</body>
+</html>
